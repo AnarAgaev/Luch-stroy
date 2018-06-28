@@ -422,9 +422,65 @@ main {
 }
 
 
+
+
+
 footer {
+		background-color: #000;
 	.wrap {
 		min-height: 76px;
-		background-color: #000;
+		padding: 0 63px;
+		.flexbox;
+		justify-content: space-between;
+		align-items: center;
+		&:after {
+			display: none;
+		}
+	}
+	.contants {
+		width: 145px;
+		color: #ffffff;
+		font-family: 'Noto Serif', serif;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 17px;
+		text-align: left;	
+		span {
+			display: block;
+			color: #fefefe;
+			font-weight: 700;
+		}
+	}
+	.creator {
+		font-family: 'Noto Serif', serif;
+		&-inform {
+			width: 154px;
+			height: 30px;
+			color: #fefefe;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 17px;
+			float: right;
+			text-align: right;	
+		}
+		&-logo {
+			width: 96px;
+			height: 11px;
+			color: #ffffff;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 4.01px;
+			text-decoration: underline;
+			letter-spacing: 0.7px;
+			float: right;
+			margin-left: 12px;
+			text-align: center;
+			&:hover {
+				text-decoration: none;
+			}
+			img {
+				margin-bottom: 8px;
+			}		
+		}
 	}
 }

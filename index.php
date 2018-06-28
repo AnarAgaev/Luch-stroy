@@ -61,10 +61,16 @@
 
 	<footer>
 		<div class="wrap">
-			
-
-
-
+			<div class="contants">
+				<span>Контактные данные:</span>
+				+7 (920) 122-66-32 Денис
+				+7 (920) 122-66-32 Олег
+			</div>
+			<button class="btn"><span>получить скидку</span></button>
+			<div class="creator">
+				<a href="https://vk.com/descube" class="creator-logo"><img src="img/logo-descube.png" alt="descube">vk.com/descube</a>
+				<div class="creator-inform">Дизайн разработан<br>web и полиграф студией:</div>
+			</div>
 		</div>
 	</footer>
 
