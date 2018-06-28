@@ -1,0 +1,430 @@
+/* Базовая динамика */
+.base__transition(@time:.3s){
+	transition: @time all ease;
+    -webkit-transition: @time all ease;
+    -moz-transition: @time all ease;
+    -o-transition: @time all ease;
+    -ms-transition: @time all ease;
+}
+
+/* Базовый поворот */
+.base__transform(@deg){
+	-webkit-transform: rotate(@deg);
+	-moz-transform:rotate(@deg);
+	-o-transform:rotate(@deg);
+	-ms-transform:rotate(@deg);
+	transform:rotate(@deg);
+}
+
+/* Фунция для задания радиуса */
+.border__radius(@radius:0){
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+/* Высота блока по контенту */
+.clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+/* Кросбраузерный флексбокс */
+.flexbox(){
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+/* Обёртка для контента */
+.wrap{
+	width: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	.clearfix;
+}
+
+
+.btn {
+	display: block;
+	width: 227px;
+	height: 42px;
+	border-radius: 5px;
+	background-color: #f7961d;
+	border-width: 0;
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	span {
+		z-index: 10;
+		position: relative;
+		display: block;
+		font-family: 'Noto Serif', serif;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 42px;
+		letter-spacing: 0.11px;
+		text-align: center;
+		display: block;
+		text-transform: uppercase;
+		color: #ffffff;
+
+	}
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 5px;
+		top: 0;
+		left: 0;
+		transition: all .3s;
+		background-image: linear-gradient(185deg, #febf00 0%, #fc8801 100%);
+		z-index: 0;
+		opacity: 0;
+	}
+	&:hover:before {
+		opacity: 1;
+	}
+}
+
+header {
+	.wrap {
+		min-height: 904px;
+		background: url("../img/head-back.jpg") no-repeat;
+		background-size: cover;
+		padding: 12px 64px;
+	}
+	.head {
+		&-title{
+			width: 100%;
+			max-width: 999px;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: inline-flex;
+			justify-content: space-between;
+			align-items: center;
+    	}
+
+		&-logo {
+			display: block;
+			float: left;
+		}
+
+		&-phones {
+			width: 100%;
+			max-width: 365px;
+			&-left, &-right{
+				color: #020202;
+				font-family: 'Noto Serif', serif;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 13.47px;		
+				display: inline-block;
+			}
+			&-left {
+				float: left;
+			}
+			&-right {
+				float: right;
+			}
+			p {
+				display: block;
+				color: #020202;
+				font-family: 'Noto Serif', serif;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 12px;
+				margin-top: 21px;
+				letter-spacing: 0.6px;
+	    		text-align: center;
+			}
+		}
+
+		&-city {
+			text-align: left;
+			width: 100%;
+			max-width: 137px;
+			.city {
+				display: block;
+				color: #020202;
+				font-family: 'Noto Serif', serif;
+				font-size: 15px;
+				font-weight: 700;
+				letter-spacing: 0.11px;
+			}
+			.work {
+				display: block;
+				color: #020202;
+				font-family: 'Noto Serif', serif;
+				font-size: 12px;
+				font-weight: 400;
+				position: relative;
+				.pulsate-fwd {
+					display: block;
+					position: absolute;
+					width: 7px;
+					height: 7px;
+					background-color: #00a651;
+					right: 20px;
+					top: 50%;
+					margin-top: -3px;
+					.border__radius(50%);
+				}
+			}
+		}
+	}
+
+	.txt-title {
+		max-width: 640px;
+		width: 100%;
+		float: left;
+		margin-top: 111px;
+
+		&_advantages{
+			color: #020202;
+			font-family: 'Noto Serif', serif;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 15px;
+			.flexbox;
+			justify-content: space-between;
+			div {
+				position: relative;
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 39px;
+					height: 1px;
+					background-color: #ffb75d;
+				}
+			}
+		}
+
+		&_big-text {
+			color: #020202;
+			font-family: 'CyrillicOld', arial;
+			font-size: 62px;
+			font-weight: 400;
+			line-height: 57.9px;
+			margin: 11px 0;
+		}
+
+		&_subtitle{
+			color: #020202;
+			font-family: 'Noto Serif', serif;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 16.39px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.btn {
+			margin: 28px auto 15px;
+		}
+
+		.sale {
+			display: block;
+			color: #000000;
+			font-family: 'Noto Serif', serif;
+			font-size: 21px;
+			font-weight: 700;
+			line-height: 26.93px;
+			width: 100%;
+			text-align: center;	
+		}
+	}
+
+	.point {
+		position: absolute;
+		top: 250px;
+		right: 120px;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 175px;
+			height: 175px;
+			background-image: linear-gradient(45deg, #febf00 0%, #fc8801 100%);
+			position: absolute;
+			border-radius: 50%;
+			top: -24px;
+			left: -24px;
+			z-index: 1;
+			opacity: .1;
+		}
+
+		&:after {
+			content: 'Каркасные дома от 20 тыс.';
+			display: block;
+			width: 127px;
+			height: 127px;
+			background-image: linear-gradient(45deg, #febf00 0%, #fc8801 100%);
+			border-radius: 50%;
+			color: #020202;
+			font-family: 'Noto Serif', serif;
+			font-size: 15px;
+			font-weight: 700;
+			line-height: 20px;
+			text-transform: uppercase;
+			text-align: center;
+			padding-top: 38px;
+			z-index: 10;
+			position: relative;
+		}
+
+		span:first-child, span:last-child {
+			display: block;
+			width: 155px;
+			height: 155px;
+			background-image: linear-gradient(45deg, #febf00 0%, #fc8801 100%);
+			position: absolute;
+			border-radius: 50%;
+			top: -14px;
+			left: -14px;
+			z-index: 3;
+		}
+	}
+}
+
+
+
+.ping {
+	-webkit-animation: ping 2.5s ease-in-out infinite both;
+	        animation: ping 2.5s ease-in-out infinite both;
+}
+@-webkit-keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0;
+  }
+}
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.ping_delay {
+	-webkit-animation: ping 2.5s ease-in-out 0.2s infinite both;
+	        animation: ping 2.5s ease-in-out 0.2s infinite both;
+}
+@-webkit-keyframes ping_delay {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0;
+  }
+}
+@keyframes ping_delay {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 1.3s ease-in-out infinite both;
+	        animation: pulsate-fwd 1.3s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+
+
+
+
+
+main {
+	.wrap {
+		min-height: 600px;
+	}
+
+}
+
+
+footer {
+	.wrap {
+		min-height: 76px;
+		background-color: #000;
+	}
+}

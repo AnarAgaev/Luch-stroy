@@ -1,0 +1,69 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ul{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+html, body {height: 100%;}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+input,textarea{
+	outline: none !important;
+}
+
+/* ----------------------------------
+	GRID 1240 - 47.5X16 
+ ---------------------------------- */
+#grid__1240_16column_colWidth47and5_margLR15{display: none; position: fixed;width: 1240px;height: 100% !important;left: calc(50%);margin-left: -620px;top: 0;z-index: 1000000;background: rgba(255,255,0,.1);}
+#grid__1240_16column_colWidth47and5_margLR15 area{cursor: default; display: inline-block;float: left;width: 47.5px;height: 100%;margin: 0 15px;background: rgba(255,0,0,.1);}
+

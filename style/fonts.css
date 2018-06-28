@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&subset=cyrillic');
+
+@font-face {
+  font-family: 'CyrillicOld-Bold';
+  src: url('../fonts/CyrillicOld/CyrillicOld-Bold.eot');
+  src: url('../fonts/CyrillicOld/CyrillicOld-Bold.woff2') format('woff2'),
+       url('../fonts/CyrillicOld/CyrillicOld-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CyrillicOld';
+  src: url('../fonts/CyrillicOld/CyrillicOld.woff') format('woff'),
+       url('../fonts/CyrillicOld/CyrillicOld.ttf') format('truetype'),
+       url('../fonts/CyrillicOld/CyrillicOld.svg#CyrillicOld') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

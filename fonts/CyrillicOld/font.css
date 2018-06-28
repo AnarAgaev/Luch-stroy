@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'CyrillicOld-Bold';
+  src: url('CyrillicOld-Bold.eot');
+  src: url('CyrillicOld-Bold.woff2') format('woff2'),
+       url('CyrillicOld-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CyrillicOld';
+  src: url('CyrillicOld.woff') format('woff'),
+       url('CyrillicOld.ttf') format('truetype'),
+       url('CyrillicOld.svg#CyrillicOld') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
