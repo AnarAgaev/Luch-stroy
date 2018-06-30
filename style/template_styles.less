@@ -93,6 +93,27 @@
 	}
 }
 
+.background-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+	z-index: 1000;
+	display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.lock {
+	overflow: hidden !important;
+	width: auto;
+	transition: all .2s;
+}
+
 header {
 	background: url("../img/head-back.jpg") center 0 no-repeat;
 	.wrap {
@@ -572,6 +593,92 @@ footer {
 			img {
 				margin-bottom: 8px;
 			}		
+		}
+	}
+}
+
+#custom-test{
+	display: block;
+	position: relative;
+	width: 96%;
+	max-width: 1367px;
+	min-height: 400px;
+	background-color: #fff;
+	margin: 0 auto 30px;
+	margin-top: -100%;
+	transition: all .3s;
+	&.show {
+		margin-top: 30px;
+	}
+}
+
+.test-viewport {
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+	.logo {
+		display: block;
+		position: absolute;
+		top: 9px;
+		left: 28px;
+	}
+	&_title{
+		width: 100%;
+		line-height: 59px;
+		color: #000000;
+		font-family: 'CyrillicOld', arial;
+		font-size: 30px;
+		font-weight: 400;
+		text-align: center;
+	}
+	&_subtitle {
+		width: 100%;
+		min-height: 45px;
+		padding: 14px 10px;
+		background-color: #000;
+		color: #ffffff;
+		font-family: 'Noto Serif', serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.3;
+		text-align: center;
+	}
+	&_body {
+		padding: 57px 80px 30px 75px;
+		overflow: hidden;
+		.left-side {
+			float: left;
+			text-align: left;
+			&_title {
+				color: #000000;
+				font-family: 'Noto Serif', serif;
+				font-size: 30px;
+				font-weight: 700;
+				line-height: 1.3;
+				margin-top: -9px;
+			}
+		}
+		.right-side {
+			float: right;
+			max-width: 316px;
+			width: 100%;
+			&_banner {
+				width: 100%;
+				border: 3px solid #f7961d;
+				color: #000000;
+				font-family: 'Noto Serif', serif;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 1.3;
+				text-align: center;
+				padding: 35px 21px;
+				float: right;
+			}
+			.btn {
+				float: right;
+				margin-top: 59px;
+			}
 		}
 	}
 }
