@@ -121,6 +121,7 @@
 	<div class="background-modal">
 		
 		<form action="" method="post" enctype="multipart/form-data"  id="custom-test">
+			
 			<div class="test-viewport" id="win-1">
 				<img src="img/test-logo.png" alt="" class="logo">
 				<div class="test-viewport_title">ШАГ 1</div>
@@ -128,23 +129,69 @@
 				<div class="test-viewport_body">
 					<div class="left-side">
 						<div class="left-side_title">Выберите тип постройки:</div>
-						<div>
-
-							
-
-						</div>
+						<ul class="basic-radio">
+							<li>
+								<input type="radio" name="type-of_house" value="Одноэтажный дом" id="tof-1">
+								<label for="tof-1">Одноэтажный дом</label>
+							</li>
+							<li>
+								<input type="radio" name="type-of_house" value="Двухэтажный дом" id="tof-2">
+								<label for="tof-2">Двухэтажный дом</label>
+							</li>
+							<li>
+								<input type="radio" name="type-of_house" value="По моему проекту" id="tof-3">
+								<label for="tof-3">По моему проекту (можно предложить отправить проект на почту)</label>
+							</li>
+							<li>
+								<input type="radio" name="type-of_house" value="Другое" id="tof-4">
+								<label for="tof-4">Другое</label>
+							</li>
+						</ul>
 					</div>
 					<div class="right-side">
 						<div class="right-side_banner">Пройди тест полностью и получи подарок (на выбор)</div>
-						<div class="btn right-side_button"><span>далее</span></div>
+						<div class="btn right-side_button" id="btn-1"><span>далее</span></div>
 					</div>
 				</div>
 			</div>
+
+
+			<div class="test-viewport" id="win-2">
+				<img src="img/test-logo.png" alt="" class="logo">
+				<div class="test-viewport_title">ШАГ 2</div>
+				<div class="test-viewport_subtitle">Для получения подарка вам осталось ответить на 3 вопроса</div>
+				<div class="test-viewport_body">
+					<div class="left-side">
+					</div>
+					<div class="right-side">
+						<div class="right-side_banner">Пройди тест полностью и получи подарок (на выбор)</div>
+						<div class="btn right-side_button" id="btn-2"><span>далее</span></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
 		</form>	
 	</div>
 
+
+
+<!-- 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/script/js/script.js"></script>
+
+ -->
+
+		<script src="script/js/less/less.min.js"></script>
+		<script src="script/js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+		<script src="/script/js/script.js"></script>
+
+
   </body>
 </html>

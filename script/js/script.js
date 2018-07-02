@@ -5,20 +5,29 @@ $(document).ready(function(){
 		$('.background-modal').fadeIn(150);
 		$('body').toggleClass('lock');
     	$('#custom-test').toggleClass('show');
+	});
 
+	$('.right-side_button').on('click', function(e){
+		switch ( $(this).attr('id') ) {
+			case 'btn-1':
+				if ( $('#win-1 input[type="radio"]:checked').val() === undefined ) {
+					alert ("Необходимо выбрать тип постройки!");
+				}
+				else {
+					$('#win-1').css('display','none');
+					$('#win-2').css('display','block');
+				}
 
-    	//$('#background-modal').removeClass('hide').addClass('show');
+				break;
+
+			case 'btn-2':
+				 alert("кнопка 2");
+				 alert("делаем дальше");
+				 break;
+		}
 	});
 
 
-	// скрываем тест при клике по пустому полю или кнопке закрыть
-	$('.background-modal').on('click', function(e){
-		//$(this).fadeOut(150);
-    	//$('body').toggleClass('lock');
-    	//$('#custom-test').toggleClass('show');
-
-    	//$('#background-modal').removeClass('hide').addClass('show');
-	});
 
 
 
