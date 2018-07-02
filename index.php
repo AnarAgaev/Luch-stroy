@@ -9,8 +9,9 @@
     <meta name="keywords" content="">
 	<title></title>
 
+	<link rel="stylesheet" type="text/css" href="/style/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="/style/reset.css" />
-	<link rel="stylesheet" href="style/fonts.css">
+	<link rel="stylesheet" type="text/css" href="/style/fonts.css">
 	<link rel="stylesheet/less" type="text/css" href="/style/template_styles.less">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -121,7 +122,7 @@
 	<div class="background-modal">
 		<form action="" method="post" enctype="multipart/form-data"  id="custom-test">
 			
-			<div class="test-viewport" id="win-1">
+			<div class="test-viewport" id="win-1" style="display: none;">
 				<img src="img/test-logo.png" alt="" class="logo">
 				<div class="test-viewport_title">ШАГ 1</div>
 				<div class="test-viewport_subtitle">Для получения подарка вам осталось ответить на 4 вопроса</div>
@@ -154,12 +155,24 @@
 				</div>
 			</div>
 
-			<div class="test-viewport" id="win-2">
+			<div class="test-viewport" id="win-2"  style="display: block;">
 				<img src="img/test-logo.png" alt="" class="logo">
 				<div class="test-viewport_title">ШАГ 2</div>
 				<div class="test-viewport_subtitle">Для получения подарка вам осталось ответить на 3 вопроса</div>
 				<div class="test-viewport_body">
 					<div class="left-side">
+
+
+
+						<p>
+						  <label for="amount">Укажите примерный бюджет:</label>
+						  <input type="text" id="amount" readonly>
+						</p>
+						 
+						<div id="slider-range-min"></div>
+
+
+
 					</div>
 					<div class="right-side">
 						<div class="right-side_banner">Пройди тест полностью и получи подарок (на выбор)</div>
@@ -275,12 +288,15 @@
 	</div>
 
 	<!-- 
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="/script/js/script.js"></script>
  	-->
-	<script src="script/js/less/less.min.js"></script>
-	<script src="script/js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+	<script src="/script/js/jquery-1.12.4/jquery-1.12.4.js"></script>
+	<script src="/script/js/less/less.min.js"></script>
+	<script src="/script/js/jquery-ui.js"></script>
 	<script src="/script/js/script.js"></script>
+	
   </body>
 </html>

@@ -83,4 +83,22 @@ $(document).ready(function(){
 				break;
 		}
 	});
+
+
+	$( function() {
+		$( "#slider-range-min" ).slider({
+		  range: "min",
+		  value: 100000,
+		  min: 100000,
+		  max: 3000000,
+		  slide: function( event, ui ) {
+		    $( "#amount" ).val( ui.value + " руб.");
+		  }
+		});
+		$( "#amount" ).val($( "#slider-range-min" ).slider( "value" ) + " руб.");
+	} );
+
 });
+
+
+
