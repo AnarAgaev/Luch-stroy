@@ -161,18 +161,29 @@
 				<div class="test-viewport_subtitle">Для получения подарка вам осталось ответить на 3 вопроса</div>
 				<div class="test-viewport_body">
 					<div class="left-side">
-
-
-
 						<p>
 						  <label for="amount">Укажите примерный бюджет:</label>
 						  <input type="text" id="amount" readonly>
 						</p>
-						 
-						<div id="slider-range-min"></div>
+						<div id="slider-amount">
+							<div class="slider break-point1">100 тыс</div>
+							<div class="slider break-point2">825 тыс</div>
+							<div class="slider break-point3">1.6 млн</div>
+							<div class="slider break-point4">2.3 млн</div>
+							<div class="slider break-point5">3 млн</div>
+						</div>
 
-
-
+						<p>
+						  <label for="sqr">Укажите желаемую полезную площадь:</label>
+						  <input type="text" id="sqr" readonly>
+						</p>
+						<div id="slider-sqr">
+							<div class="slider break-point1">10 м2</div>
+							<div class="slider break-point2">70 м2</div>
+							<div class="slider break-point3">130 м2</div>
+							<div class="slider break-point4">190 м2</div>
+							<div class="slider break-point5">250 м2</div>
+						</div>
 					</div>
 					<div class="right-side">
 						<div class="right-side_banner">Пройди тест полностью и получи подарок (на выбор)</div>

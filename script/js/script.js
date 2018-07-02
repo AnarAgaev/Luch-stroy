@@ -86,7 +86,7 @@ $(document).ready(function(){
 
 
 	$( function() {
-		$( "#slider-range-min" ).slider({
+		$( "#slider-amount" ).slider({
 		  range: "min",
 		  value: 100000,
 		  min: 100000,
@@ -95,7 +95,20 @@ $(document).ready(function(){
 		    $( "#amount" ).val( ui.value + " руб.");
 		  }
 		});
-		$( "#amount" ).val($( "#slider-range-min" ).slider( "value" ) + " руб.");
+		$( "#amount" ).val($( "#slider-amount" ).slider( "value" ) + " руб.");
+	} );
+
+	$( function() {
+		$( "#slider-sqr" ).slider({
+		  range: "min",
+		  value: 10,
+		  min: 10,
+		  max: 250,
+		  slide: function( event, ui ) {
+		    $( "#sqr" ).val( ui.value + " м2");
+		  }
+		});
+		$( "#sqr" ).val($( "#slider-sqr" ).slider( "value" ) + " м2");
 	} );
 
 });
