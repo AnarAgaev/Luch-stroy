@@ -119,7 +119,6 @@
 	</footer>
 
 	<div class="background-modal">
-		
 		<form action="" method="post" enctype="multipart/form-data"  id="custom-test">
 			
 			<div class="test-viewport" id="win-1">
@@ -131,20 +130,20 @@
 						<div class="left-side_title">Выберите тип постройки:</div>
 						<ul class="basic-radio">
 							<li>
-								<input type="radio" name="type-of_house" value="Одноэтажный дом" id="tof-1">
-								<label for="tof-1">Одноэтажный дом</label>
+								<input type="radio" name="type-of_house" value="Одноэтажный дом" id="toh-1">
+								<label for="toh-1">Одноэтажный дом</label>
 							</li>
 							<li>
-								<input type="radio" name="type-of_house" value="Двухэтажный дом" id="tof-2">
-								<label for="tof-2">Двухэтажный дом</label>
+								<input type="radio" name="type-of_house" value="Двухэтажный дом" id="toh-2">
+								<label for="toh-2">Двухэтажный дом</label>
 							</li>
 							<li>
-								<input type="radio" name="type-of_house" value="По моему проекту" id="tof-3">
-								<label for="tof-3">По моему проекту (можно предложить отправить проект на почту)</label>
+								<input type="radio" name="type-of_house" value="По моему проекту" id="toh-3">
+								<label for="toh-3">По моему проекту (можно предложить отправить проект на почту)</label>
 							</li>
 							<li>
-								<input type="radio" name="type-of_house" value="Другое" id="tof-4">
-								<label for="tof-4">Другое</label>
+								<input type="radio" name="type-of_house" value="Другое" id="toh-4">
+								<label for="toh-4">Другое</label>
 							</li>
 						</ul>
 					</div>
@@ -154,7 +153,6 @@
 					</div>
 				</div>
 			</div>
-
 
 			<div class="test-viewport" id="win-2">
 				<img src="img/test-logo.png" alt="" class="logo">
@@ -170,28 +168,119 @@
 				</div>
 			</div>
 
+			<div class="test-viewport" id="win-3">
+				<img src="img/test-logo.png" alt="" class="logo">
+				<div class="test-viewport_title">ШАГ 3</div>
+				<div class="test-viewport_subtitle">Для получения подарка вам осталось ответить на 2 вопроса</div>
+				<div class="test-viewport_body">
+					<div class="left-side">
+						<div class="left-side_title">Выберите вариант утепления:</div>
+						<ul class="basic-radio">
+							<li>
+								<input type="radio" name="warming" value="Летний дачный дом 50 мм" id="w-1">
+								<label for="w-1">Летний дачный дом 50 мм</label>
+							</li>
+							<li>
+								<input type="radio" name="warming" value="Дачный дом, для проживания до поздней осени 100 мм" id="w-2">
+								<label for="w-2">Дачный дом, для проживания до поздней осени 100 мм</label>
+							</li>
+							<li>
+								<input type="radio" name="warming" value="Дом для круглогодичного проживания 150 мм" id="w-3">
+								<label for="w-3">Дом для круглогодичного проживания 150 мм</label>
+							</li>
+							<li>
+								<input type="radio" name="warming" value="Премиум зима 250 мм" id="w-4">
+								<label for="w-4">Премиум зима 250 мм</label>
+							</li>
+							<li>
+								<input type="radio" name="warming" value="Другое" id="w-5">
+								<label for="w-5">Другое</label>
+							</li>
+						</ul>
+					</div>
+					<div class="right-side">
+						<div class="right-side_banner">Пройди тест полностью и получи подарок (на выбор)</div>
+						<div class="btn right-side_button" id="btn-3"><span>далее</span></div>
+					</div>
+				</div>
+			</div>
 
+			<div class="test-viewport" id="win-4">
+				<img src="img/test-logo.png" alt="" class="logo">
+				<div class="test-viewport_title">ШАГ 4</div>
+				<div class="test-viewport_subtitle">Для получения подарка вам осталось ответить на 1 вопроса</div>
+				<div class="test-viewport_body">
+					<div class="left-side">
+						<div class="left-side_title">Выберите тип фундамента:</div>
+						<ul class="basic-radio">
+							<li>
+								<input type="radio" name="type-of_foundation" value="Ленточный" id="tof-1">
+								<label for="tof-1">Ленточный</label>
+							</li>
+							<li>
+								<input type="radio" name="type-of_foundation" value="Свайно - винтовой" id="tof-2">
+								<label for="tof-2">Свайно - винтовой</label>
+							</li>
+							<li>
+								<input type="radio" name="type-of_foundation" value="Блочный" id="tof-3">
+								<label for="tof-3">Блочный</label>
+							</li>
+						</ul>
+					</div>
+					<div class="right-side">
+						<div class="right-side_banner">Пройди тест полностью и получи подарок (на выбор)</div>
+						<div class="btn right-side_button" id="btn-4"><span>далее</span></div>
+					</div>
+				</div>
+			</div>
 
-
-
-
-
+			<div class="test-viewport" id="win-5">
+				<img src="img/test-logo.png" alt="" class="logo">
+				<div class="test-viewport_title">ШАГ 5</div>
+				<div class="test-viewport_subtitle">Выберите подарок и оставьте свои контактные данные</div>
+				<div class="test-viewport_body">
+					<div class="left-side">
+						<div class="present">
+							<img src="img/wins.png" alt="Подарок Пластиковые окна">
+							<div class="basic-radio">
+								<input type="radio" name="present" value="Пластиковые окна" id="p-1">
+								<label for="p-1">Пластиковые окна</label>
+							</div>
+						</div>
+						<div class="present">
+							<img src="img/bake.png" alt="Подарок Печь с трубой и установкой">
+							<div class="basic-radio">
+								<input type="radio" name="present" value="Печь с трубой и установкой" id="p-2">
+								<label for="p-2">Печь с трубой и установкой</label>
+							</div>
+						</div>
+						<div class="present">
+							<img src="img/well.png" alt="Подарок Колодец (5 колец)">
+							<div class="basic-radio">
+								<input type="radio" name="present" value="Колодец (5 колец)" id="p-3">
+								<label for="p-3">Колодец (5 колец)</label>
+							</div>
+						</div>
+					</div>
+					<div class="right-side">
+						<div class="right-side_title">Спасибо за ответы</div>
+						<div class="right-side_subtitle">Для получения купона на скидку, оставьте свои контактные данные</div>
+						<input type="text" id="phone"  placeholder="Ваш телефон:">
+						<input type="text" id="mail"  placeholder="Ваш E-mail:">
+						<div class="btn right-side_button" id="btn-5"><span>отправить</span></div>
+					</div>
+				</div>
+			</div>
 		</form>	
 	</div>
 
-
-
-<!-- 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="/script/js/script.js"></script>
-
- -->
-
-		<script src="script/js/less/less.min.js"></script>
-		<script src="script/js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+	<!-- 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="/script/js/script.js"></script>
-
-
+ 	-->
+	<script src="script/js/less/less.min.js"></script>
+	<script src="script/js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+	<script src="/script/js/script.js"></script>
   </body>
 </html>
