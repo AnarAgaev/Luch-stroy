@@ -91,9 +91,14 @@ $(document).ready(function(){
 								$('body').toggleClass('lock');
 						    	$('#custom-test').toggleClass('show');
 
-
-						    	// почитси поля
-								//$('#name__fb,#mail__fb,#msg__fb').val('');
+								type_of_house: $('input[name=type-of_house]').prop('checked', false); // тип дома
+								$( '#amount' ).val('100000 руб.'); // примерная стоимость
+								$( '#sqr' ).val('10 м2'); // примерная площадь
+								$('input[name=warming]').prop('checked', false); // тип утепления
+								$('input[name=type-of_foundation]').prop('checked', false); // тип фундамента
+								$('input[name=present]').prop('checked', false); // выбринный подарок
+								$('#phone').val(''); // телефон
+								$('#mail').val(''); // мэйл
 							}
 							else alert('К сожалению во время отправки резульатов теста произошла ошибка. Повторите попытку немного позже');
 						}
