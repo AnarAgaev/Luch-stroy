@@ -33,12 +33,12 @@ if ( isset($_POST['type_of_house']) and
 	$MESSAGE .= "Указанный адрес электронной почты: ".$mail."\r\n";
 	$MESSAGE .= "---------------------------------\r\n\n\n";
 	$MESSAGE .= "Не отвечайте на данной сообщение так как оно сформированно автоматически на сервере сайта. Для контакта с посетителем используйте данные из заполненного тест.\r\n\n";
-	$SUBJECT = "Сообщение от посетителя сайта Ярлуч.рф";
+	$SUBJECT = "Сообщение от посетителя сайта";
 	$SUBJECT = "=?utf-8?b?". base64_encode($SUBJECT) ."?=";
 	$FROM = "Ярлуч.рф";
 	$FROM = "=?utf-8?b?". base64_encode($FROM) ."?=";	
 	$HEADER = "Content-type: text/plain; charset=utf-8\r\n";
-	$HEADER .= "From: ".$FROM."<info@ярлуч.рф>\r\n";
+	$HEADER .= "From: ".$FROM."<info@xn--k1ajkq0b.xn--p1ai>\r\n";
 	$HEADER .= "MIME-Version: 1.0\r\n"; 
 	$HEADER .= "Date: ".date('D, d M Y h:i:s O'); 
 	
