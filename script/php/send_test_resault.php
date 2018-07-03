@@ -1,6 +1,6 @@
 <?php
 /* ---------- Данный скрпт отправляет рузультаты заполенного теста на емайл заказчика ---------- */
-$EMAIL = 'anar.n.agaev@gmail.com';
+$EMAIL = 'denissennikov@mail.ru,olegsennikov@mail.ru';  // 
 
 if ( isset($_POST['type_of_house']) and 
      isset($_POST['budget']) and 
