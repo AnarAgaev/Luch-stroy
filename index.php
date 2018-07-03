@@ -298,16 +298,16 @@
 		</form>	
 	</div>
 
-	<!-- 
+	 
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
 		<script src="/script/js/script.js"></script>
- 	-->
+ 	<!--
 	<script src="/script/js/jquery-1.12.4/jquery-1.12.4.js"></script>
 	<script src="/script/js/less/less.min.js"></script>
 	<script src="/script/js/jquery-ui.js"></script>
 	<script src="/script/js/script.js"></script>
-	
+	-->
   </body>
 </html>
