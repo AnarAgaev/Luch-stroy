@@ -122,7 +122,7 @@
 	<div class="background-modal">
 		<form action="" method="post" enctype="multipart/form-data"  id="custom-test">
 			
-			<div class="test-viewport" id="win-1" style="display: none;">
+			<div class="test-viewport" id="win-1">
 				<img src="img/test-logo.png" alt="" class="logo">
 				<div class="test-viewport_title">ШАГ 1</div>
 				<div class="test-viewport_subtitle">Для получения подарка вам осталось ответить на 4 вопроса</div>
@@ -155,7 +155,7 @@
 				</div>
 			</div>
 
-			<div class="test-viewport" id="win-2"  style="display: block;">
+			<div class="test-viewport" id="win-2">
 				<img src="img/test-logo.png" alt="" class="logo">
 				<div class="test-viewport_title">ШАГ 2</div>
 				<div class="test-viewport_subtitle">Для получения подарка вам осталось ответить на 3 вопроса</div>
@@ -173,7 +173,7 @@
 							<div class="slider break-point5">3 млн</div>
 						</div>
 
-						<p>
+						<p class="meters">
 						  <label for="sqr">Укажите желаемую полезную площадь:</label>
 						  <input type="text" id="sqr" readonly>
 						</p>

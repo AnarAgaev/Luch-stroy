@@ -21,8 +21,11 @@ $(document).ready(function(){
 				break;
 
 			case 'btn-2':
-				if ( false ) {
-					alert ("Необходимо выбрать тип постройки!");
+				if ( $( "#amount" ).val() == '100000 руб.') {
+					alert ("Необходимо указать примерный бюджет!");
+				}
+				else if ( $( "#sqr" ).val() == '10 м2') {
+					alert ("Необходимо указать полезную площадь!");
 				}
 				else {
 					$('#win-2').css('display','none');
@@ -63,28 +66,44 @@ $(document).ready(function(){
 					$('#mail').focus();
 				}
 				else {
-					$('#win-5').css('display','none');
-					$('#win-1').css('display','block');
-					
+
+					$.ajax({
+						type: "POST",
+						cache: false ,
+						url: "/script/php/send_test_resault.php",
+						data: {	type_of_house: $('input[name=type-of_house]:checked').val(), // тип дома 
+								budget : $( '#amount' ).val(), // примерная стоимость
+								meters : $( '#sqr' ).val(), // примерная площадь
+								warming: $('input[name=warming]:checked').val(), // тип утепления
+								foundation: $('input[name=type-of_foundation]:checked').val(), // тип фундамента
+								present: $('input[name=present]:checked').val(), // выбринный подарок
+								phone: $('#phone').val(), // телефон
+								mail: $('#mail').val() // мэйл
+							  },
+						dataType: "text",
+						async: true,
+						success: function(data){
+							if(data == 'true'){
+								$('#win-5').css('display','none');
+								$('#win-1').css('display','block');
+								alert('Тест отправлен. Менеджер связется с Вами в ближайшее время.');
+								$('.background-modal').fadeOut(150);
+								$('body').toggleClass('lock');
+						    	$('#custom-test').toggleClass('show');
 
 
-
-
-
-
-
-					alert('Тест отправлен. Менеджер связется с Вами в ближайшее время.');
-					$('.background-modal').fadeOut(150);
-					$('body').toggleClass('lock');
-			    	$('#custom-test').toggleClass('show');
-
-
+						    	// почитси поля
+								//$('#name__fb,#mail__fb,#msg__fb').val('');
+							}
+							else alert('К сожалению во время отправки резульатов теста произошла ошибка. Повторите попытку немного позже');
+						}
+					});
 				}
 				break;
 		}
 	});
 
-
+	// скролл для примерная стоимость
 	$( function() {
 		$( "#slider-amount" ).slider({
 		  range: "min",
@@ -98,6 +117,7 @@ $(document).ready(function(){
 		$( "#amount" ).val($( "#slider-amount" ).slider( "value" ) + " руб.");
 	} );
 
+	// скролл для примерная площадь
 	$( function() {
 		$( "#slider-sqr" ).slider({
 		  range: "min",

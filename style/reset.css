@@ -61,9 +61,6 @@ input,textarea{
 	outline: none !important;
 }
 
-/* ----------------------------------
-	GRID 1240 - 47.5X16 
- ---------------------------------- */
-#grid__1240_16column_colWidth47and5_margLR15{display: none; position: fixed;width: 1240px;height: 100% !important;left: calc(50%);margin-left: -620px;top: 0;z-index: 1000000;background: rgba(255,255,0,.1);}
-#grid__1240_16column_colWidth47and5_margLR15 area{cursor: default; display: inline-block;float: left;width: 47.5px;height: 100%;margin: 0 15px;background: rgba(255,0,0,.1);}
-
+* {
+  outline: none !important;
+}

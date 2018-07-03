@@ -657,6 +657,7 @@ footer {
 		.left-side {
 			float: left;
 			text-align: left;
+			max-width: 770px;
 			&_title {
 				color: #000000;
 				font-family: 'Noto Serif', serif;
@@ -703,8 +704,6 @@ footer {
     			}
 			}
 
-
-
 			p {
 				color: #000000;
 				font-family: 'Noto Serif', serif;
@@ -717,8 +716,10 @@ footer {
 					font-size: 30px;
 					font-weight: 700;
 					border: 0;
-
-
+					max-width: 250px;
+				}
+				&.meters input {
+					max-width: 110px;
 				}
 			}
 
@@ -815,7 +816,7 @@ footer {
 		.flexbox;
 		justify-content: space-between;
 		margin: 0 20px;
-
+		max-width: 100%;
 		.present {
 			.flexbox;
 			flex-direction: column;
